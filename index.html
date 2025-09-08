@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dish Posting & Rating System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Post a Dish</h1>
+    <form id="dish-form">
+      <label for="description">Dish Description:</label>
+      <input
+        type="text"
+        id="description"
+        placeholder="Describe your dish"
+        required
+      />
+
+      <label for="image">Upload Image:</label>
+      <input type="file" id="image" accept="image/*" required />
+
+      <button type="submit">Post Dish</button>
+    </form>
+
+    <h2>Dishes</h2>
+    <ul id="dish-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
